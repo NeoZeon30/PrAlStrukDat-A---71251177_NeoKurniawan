@@ -13,7 +13,7 @@ def pola_sakit_kepala(panjang, lebar):
 
         for i in range(panjang):
             for j in range(lebar):
-                nilai = 1 + (i - tengah) + (j - tengah)
+                nilai = 1 + abs(i - tengah) + abs(j - tengah)
                                 
                 digit = nilai % 10
                 
