@@ -14,4 +14,9 @@ def piramida_angka(angka):
 
         print()
 
+<<<<<<< HEAD
 piramida_angka(10)
+=======
+
+piramida_angka(5)
+>>>>>>> 9deb8801159a0aaea849656ec7eed61fe91dfce5
