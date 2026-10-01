@@ -114,6 +114,7 @@ if st.button("Hitung Pengeluaran"):
     if hiburan == nilai_terbesar:
         pengeluaran_terbesar.append("Hiburan")
 
+    st.write("Pengeluaran Terbesar:", "".join(pengeluaran_terbesar))
     # --- Grafik Pengeluaran ---
     st.subheader("Grafik Pengeluaran")
     st.bar_chart(df_pengeluaran.set_index("Kategori"))
