@@ -2,7 +2,7 @@ import streamlit as st
 from user import user_data_by_username
 
 # CEK APAKAH SUDAH LOGIN
-if st.session_state.login == False:
+if st.session_state.logged_in == False:
     st.switch_page("app.py")
     
 user = user_data_by_username()
