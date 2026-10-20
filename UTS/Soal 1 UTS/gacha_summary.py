@@ -4,10 +4,10 @@ from history_gacha import history_gacha
 st.title("Gacha History Tracker")
 
 # TODO 1: Buat pilihan pengurutan waktu dengan st.radio () dengan pilihan "Terbaru (Descending)" atau "Terlama (Ascending)"
-urutan = ...
+urutan = st.radio("Urutkan Berdasarkan Waktu Pull:", ["Terbaru (Descending)", "Terlama (Ascending)"], horizontal= True)
 
 # TODO 2: Tentukan is_descending berdasarkan value urutan
-if ...:
+if st.radio == True:
     is_descending = ...
 else:
     is_descending = ...
@@ -28,7 +28,11 @@ four_stars = []
 for item in history_gacha:
     #jika 5 star tambahkan ke five_stars
     #jika 4 star tambahkan ke four_stars
-    pass
+    if item["rarity"] == 5:
+        pass
+
+    if item["rarity"] == 4:
+        pass
 
 # TODO 5: Tampilkan Summary Pity & Drop
 st.subheader("Summary Pity & Drop")
@@ -41,24 +45,21 @@ col3.metric("Total Bintang 4 ", ...) #total 4 star
 
 with st.expander("Lihat Summary 5 star & 4 star"):
     # Tampilan Bintang 5
-    
+    st.metric("Bintang 5:")
     # Tampilan Bintang 4
-
-    pass
-
+    st.write("Bintang 4:")
 
 st.divider()
 
 # TODO 7: Tampilkan History Pull
 st.subheader("History Pull")
 for data in sorted_history:
-
+    st.warning(f"")
     # jika bintang 5 tampilkan dengan st.warning
-
+    st.success(f"")
     # jika bintang 4 tampilkan dengan st.success
-
+    st.info(f"")
     # selain itu dengan st.info
 
     # FORMAT TAMPILAN DATA: <Nama Item> (Rarity: <Rarity> star) — <Timestamp>
     pass
-    

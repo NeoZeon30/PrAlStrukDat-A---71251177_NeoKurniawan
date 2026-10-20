@@ -25,10 +25,10 @@ if "started" not in st.session_state:        # (diberikan)
     st.session_state.started = False         # (diberikan)
 
 if "loc" not in st.session_state:
-    st.session_state.loc = ...               # TODO 1a
+    st.session_state.loc = [0,0]               # TODO 1a
 
 if "ghosts" not in st.session_state:
-    st.session_state.ghosts = ...            # TODO 1b
+    st.session_state.ghosts = ()         # TODO 1b
 
 
 # ============================================================
